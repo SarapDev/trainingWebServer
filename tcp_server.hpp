@@ -29,6 +29,11 @@ private:
     int lSocket;
     int incomingSocket;
     int lPort;
+    int clientSocket[30];
+    int sd;
+    int maxSd;
+    int activity;
+    fd_set readFds;
     unsigned int lSocketAddressLen;
     struct sockaddr_in lSocketAddress;
     std::string response;
